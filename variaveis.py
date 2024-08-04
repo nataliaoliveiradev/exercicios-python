@@ -79,3 +79,14 @@ print(s1)
 #f-string
 s1 =f'F-string: minha idade é {idade}, minha comida favorita é {comida} e a divisão é {divisao}'
 print(s1)
+
+#Fatiamento
+s1 = 'Lógica de Programação e Algoritmos'
+print(s1[0:6])
+#É possível omitir o número da esquerda (início) ou o da direita (final) para representar tudo a partir do início, ou tudo até o final, respectivamente
+s1 = 'Lógica de Programação e Algoritmos'
+print(s1[:6])
+#criamos uma variável denominada tamanho, que  recebe o resultado da função len de uma string s1. O resultado é que a string contém 34 caracteres. Atente-se ao fato de que caracteres como espaços também entram nessa contagem, afinal, também são codificados
+s1 = 'Lógica de Programação e Algoritmos'
+tamanho = len(s1)
+print(tamanho)
