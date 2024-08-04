@@ -18,3 +18,64 @@ nota_aluno = 6
 media = 7
 aprovacao = nota_aluno >= media
 print('Você foi aprovado?', aprovacao)
+#Podemos armazenar uma string em uma só variável no Python:
+frase = 'Olá, mundo!'
+print(frase[0])
+print(frase[1])
+print(frase[2])
+print(frase[3])
+print(frase[4])
+print(frase[5])
+print(frase[6])
+print(frase[7])
+print(frase[8])
+print(frase[9])
+#Concatenar strings significa juntá-las ou somá-las.
+s1 = 'Lógica de Programação'
+s1 = s1 + ' e Algoritmos'
+print(s1)
+#Podemos repetir uma mesma string várias vezes, na concatenação, utilizando o símbolo de multiplicação (*). No exemplo a seguir, multiplicou-se o caractere do tracejado dez vezes, facilitando sua escrita.
+s2 = 'Squirtle' + '-' * 10 + 'Wartotle'+ '-' * 10 + 'Blastoise'
+print(s2)
+#Podemos, por exemplo, colocar o valor de uma variável dentro de uma outra variável que seja do tipo string. Utilizamos, para isso, um símbolo de percentual (%), que vamos chamar de marcador de posição. Esse símbolo será colocado dentro de nosso texto, no local exato onde o valor de uma variável deve aparecer
+nota = 8.5
+s1 = 'Você tirou %f na disciplina de Algoritmos' % nota
+print(s1)
+#Se estivermos trabalhando com números de ponto flutuante, podemos delimitar quantas casas decimais queremos colocar na tela. Para isso, inserimos, entre o símbolo de percentual e a letra do tipo da variável, um ponto e um número. O número indica quantas casas decimais teremos. Se usarmos .2, teremos duas casas decimais aparecendo 
+nota = 8.5
+s1 = 'Você tirou %.2f na disciplina de Algoritmos' % nota
+print(s1)
+#Observe o exemplo, a seguir com duas variáveis, uma do tipo ponto flutuante e outra do tipo string:
+nota = 8.5
+disciplina = 'Algoritmos'
+s1 = 'Você tirou %d na disciplina de %s' % (nota, disciplina)
+print(s1)
+#Composição moderna:  ao invés de % dentro do texto, usamos chaves; ao invés do percentual fora do texto, usamos .format
+nota = 8
+disciplina = 'Algoritmos'
+s1 = 'Você tirou {} na disciplina de {}'.format(nota,disciplina)
+print(s1)
+#Composição com f-string: As f-strings permitem que você insira expressões diretamente em literais de strings precedidas do caractere f. Dentro da string, você pode colocar expressões, entre chaves {} que serão avaliadas e substituídas pelos valores correspondentes, durante a execução do programa
+nota = 8
+disciplina = 'Algoritmos'
+s1 = f'Você tirou {nota} na disciplina de {disciplina}'
+print(s1)
+#Sua vez de praticar!
+# Crie três variáveis distintas: uma contendo o nome da sua comida favorita; outra contendo o seu ano de nascimento; e a terceira contendo o resultado da divisão do seu ano de nascimento pela sua idade. 
+# Armazene, em uma quarta variável, do tipo string, uma mensagem que contenha todas as informações das variáveis anteriores.
+# Resolva o exercício pela maneira clássica de composição e também pela maneira moderna e com f-string. 
+#classico
+comida = 'hambúrguer'
+ano = 1996
+idade = 28
+divisao = ano / idade
+variavel = comida,ano,idade,divisao
+print(variavel)
+s1 ='Clássico: minha idade é %d, minha comida favorita é %s e a divisão é %f'%(idade,comida,divisao)
+print(s1)
+#moderno
+s1 ='Moderno: minha idade é {}, minha comida favorita é {} e a divisão é {}'.format(idade,comida,divisao)
+print(s1)
+#f-string
+s1 =f'F-string: minha idade é {idade}, minha comida favorita é {comida} e a divisão é {divisao}'
+print(s1)
