@@ -13,3 +13,8 @@ b = 5 #b recebe 5
 #resposta recebe o resultado da comparação lógica de igualdade
 resposta = a == b 
 print('A resposta é:', resposta)
+# Crie uma variável que receba uma nota de um aluno. Crie outra variável  que receba o resultado de uma comparação lógica entre a nota escolhida e o valor 7, que é a média para aprovação. Caso a nota seja maior ou  igual a 7, o resultado deve ser verdadeiro. Imprima o resultado da comparação na tela.
+nota_aluno = 6
+media = 7
+aprovacao = nota_aluno >= media
+print('Você foi aprovado?', aprovacao)
