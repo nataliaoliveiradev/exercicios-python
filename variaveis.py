@@ -90,3 +90,18 @@ print(s1[:6])
 s1 = 'Lógica de Programação e Algoritmos'
 tamanho = len(s1)
 print(tamanho)
+
+# desenvolva um algoritmo que solicite ao usuário dois números inteiros. Imprima a soma desses dois números na tela
+x = int(input('Digite um número inteiro: '))
+y = int(input('Digite outro número inteiro: '))
+res = f'O resultado da soma de {x} com {y} é {x + y}.'
+print(res)
+
+#desenvolva um algoritmo que solicite ao usuário uma quantidade de dias, de horas, de minutos e de segundos. Calcule o total de segundos resultante e imprima-o na tela, para o usuário.
+d = int(input('Digite um número de dias: '))
+h = int(input('Digite um número de horas: '))
+m = int(input('Digite um número de minutos: '))
+s = int(input('Digite um número de segundos: '))
+total = s + (m * 60) + (h * 60 * 60) + (d * 24 * 60 * 60)
+res = 'O total de segundos calculado é {}.'.format(total)
+print(res)
