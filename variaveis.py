@@ -105,3 +105,16 @@ s = int(input('Digite um número de segundos: '))
 total = s + (m * 60) + (h * 60 * 60) + (d * 24 * 60 * 60)
 res = 'O total de segundos calculado é {}.'.format(total)
 print(res)
+
+#desenvolva um algoritmo que solicite ao usuário o preço de um produto e um percentual de desconto a ser aplicado a ele. Calcule-o e exiba o valor do desconto e o preço final do produto
+preco = int(input('Digite o valor do produto: '))
+p = int(input('Digite o percentual de desconto a ser aplicado: '))
+desconto = preco * (p/100)
+total = preco - desconto
+res = 'O valor do desconto é {}, e o preço final do produto é {}.'.format(desconto,total)
+print(res)
+
+#desenvolva um algoritmo que converta uma temperatura de Celsius (C) em Fahrenheit (F).
+C = float(input('Digite uma temperatura em Celsius: '))
+F = ((9 * C/5) + 32)
+print('Temperatura em Celsius: {}, temperatura em Fahrenheit: {}'.format(C,F))
